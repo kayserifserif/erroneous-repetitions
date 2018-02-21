@@ -2,7 +2,7 @@
   "name": "erroneous-repetitions",
   "version": "0.0.0",
   "private": true,
-  "description": "a trove of quality quotations and literary wordsmithery",
+  "description": "a trove of quality quotations and literary wordsmithery.",
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -11,7 +11,8 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
-    "mongodb": "^2.2.31",
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.0.6",
     "morgan": "~1.8.1",
     "pug": "~2.0.0-beta11",
     "serve-favicon": "~2.4.2"
