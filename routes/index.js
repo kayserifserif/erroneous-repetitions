@@ -5,7 +5,7 @@ var Quote = require('./user_model.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	mongoose.connect('mongodb://localhost/mydb');
+	mongoose.connect('mongodb://myTester:xyz123@localhost:27017/mydb');
 	mongoose.Promise = global.Promise;
 	var db = mongoose.connection;
 	db.on('error', console.error.bind(console, 'MongoDB connection error:'));
