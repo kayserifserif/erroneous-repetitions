@@ -2,7 +2,7 @@ extends layout
 
 block content
 	div.title
-		h1= title
+		h1: a(href='/')= title
 	div.post
 		// choose random quote
 		- var quote = quotes[Math.floor(Math.random()*quotes.length)];
@@ -10,3 +10,7 @@ block content
 		div.origin
 			div.person= quote.person
 			div.source= quote.source
+
+block extra
+	div.github
+		a(href="https://github.com/whykatherine/erroneous-repetitions") GitHub
