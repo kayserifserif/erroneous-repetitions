@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var Quote = require('./user_model.js');
 
