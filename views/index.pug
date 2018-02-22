@@ -1,11 +1,10 @@
 extends layout
 
 block content
-	// h1= title
-	h1 Erroneous Repetitions
-	table
-		each quote in quotes
-			tr
-				td= quote.quote
-				td= quote.person
-				td= quote.source
+	h1.title Erroneous Repetitions
+	div.quotes
+		// choose random quote
+		- var quote = quotes[Math.floor(Math.random()*quotes.length)];
+		div.quote= quote.quote
+		div.person= quote.person
+		div.source= quote.source
