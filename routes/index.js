@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 			if (err) {
 				return console.error(err);
 			} else {
-				res.render('index', {quotes: quotes});
+				res.render('index', {title: 'Erroneous Repetitions', quotes: quotes});
 			}
 		});
 	});

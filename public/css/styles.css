@@ -14,7 +14,6 @@ body {
 	color: rgb(65,65,65);
 	font-family: "Merriweather", serif;
 	font-size: 28px;
-	line-height: 1.7;
 }
 
 h1,
@@ -35,29 +34,39 @@ h6 {
 }
 
 .title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #4F7178;
+}
+
+.title h1 {
 	margin: 0;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 1em;
-	background-color: #bf8176;
-	color: #fff;
+	color: #F2DEBD;
 }
 
 .post {
 	display: grid;
 	grid-template-rows: auto 150px;
+	background-color: #BF8176;
+	color: #fff;
 }
 
 .quote {
-	width: 60%;
+	width: 65%;
 	margin: auto;
+	line-height: 1.7;
 }
 
 .origin {
 	height: 100%;
 	display: grid;
 	align-content: center;
-	background-color: rgb(245,245,245);
+	background-color: #E4AF8E;
+	color: #fff;
 }
 
 .source {
