@@ -2,7 +2,8 @@
 	box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -29,21 +30,22 @@ h6 {
 	height: 100%;
 	width: 100%;
 	display: grid;
-	grid-template-rows: 50px auto;
+	grid-template-rows: 100px auto;
+	text-align: center;
 }
 
 .title {
-	text-align: center;
+	margin: 0;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 1em;
+	background-color: #bf8176;
+	color: #fff;
 }
 
 .post {
 	display: grid;
-	grid-template-rows: auto 100px;
-	align-items: center;
-	text-align: center;
+	grid-template-rows: auto 150px;
 }
 
 .quote {
@@ -51,6 +53,13 @@ h6 {
 	margin: auto;
 }
 
-.text {
+.origin {
+	height: 100%;
+	display: grid;
+	align-content: center;
+	background-color: rgb(245,245,245);
+}
+
+.source {
 	font-style: italic;
 }
