@@ -2,9 +2,10 @@ extends layout
 
 block content
 	h1.title Erroneous Repetitions
-	div.quotes
+	div.post
 		// choose random quote
 		- var quote = quotes[Math.floor(Math.random()*quotes.length)];
 		div.quote= quote.quote
-		div.person= quote.person
-		div.source= quote.source
+		div.source
+			div.person= quote.person
+			div.text= quote.source

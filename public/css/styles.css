@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -8,8 +12,8 @@ body {
 	background-color: rgb(250,250,250);
 	color: rgb(65,65,65);
 	font-family: "Merriweather", serif;
-	font-size: 24px;
-	line-height: 1.5;
+	font-size: 28px;
+	line-height: 1.7;
 }
 
 h1,
@@ -22,38 +26,31 @@ h6 {
 }
 
 .container {
-	padding: 3em;
+	height: 100%;
+	width: 100%;
 	display: grid;
-	grid-template-rows: 50px auto 50px;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
+	grid-template-rows: 50px auto;
 }
 
 .title {
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	font-size: 1em;
 }
 
 .post {
-	width: 75%;
-}
-
-.quote {
+	display: grid;
+	grid-template-rows: auto 100px;
+	align-items: center;
 	text-align: center;
 }
 
-.person {
-	margin-top: 1em;
+.quote {
+	width: 60%;
+	margin: auto;
 }
 
-.person,
-.source {
-	text-align: right;
-}
-
-.source {
+.text {
 	font-style: italic;
 }
