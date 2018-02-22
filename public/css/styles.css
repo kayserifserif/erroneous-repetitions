@@ -5,8 +5,11 @@ html, body {
 }
 
 body {
+	background-color: rgb(250,250,250);
+	color: rgb(65,65,65);
 	font-family: "Merriweather", serif;
-	font-size: 16px;
+	font-size: 24px;
+	line-height: 1.5;
 }
 
 h1,
@@ -19,5 +22,38 @@ h6 {
 }
 
 .container {
-	padding: 5em;
+	padding: 3em;
+	display: grid;
+	grid-template-rows: 50px auto 50px;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1em;
+}
+
+.post {
+	width: 75%;
+}
+
+.quote {
+	text-align: center;
+}
+
+.person {
+	margin-top: 1em;
+}
+
+.person,
+.source {
+	text-align: right;
+}
+
+.source {
+	font-style: italic;
 }
